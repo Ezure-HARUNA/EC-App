@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import {Footer, Loading, ScrollToTop} from './components/UIKit'
+import "./assets/reset.css"
+import "./assets/style.css"
+// import {Header} from './components/Header'
+import Router from "./Router";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <>
+         {/* <Loading> */}
+            {/* <ScrollToTop /> */}
+            {/* <Header /> */}
+            <main>
+              <Router />
+              <section>
+                <div className="module-spacer--medium" />
+                <div className="module-spacer--medium" />
+              </section>
+            </main>
+            {/* <Footer /> */}
+         {/* </Loading> */}
+        </>
+    );
+};
 
 export default App;

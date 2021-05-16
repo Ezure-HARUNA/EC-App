@@ -1,7 +1,7 @@
 import React from 'react';
-import TextField from "@material-ui/core"
+import TextField from "@material-ui/core/TextField"
 
-const TextField = (props) => {
+const TextInput = (props) => {
     return (
         <TextField 
           fullWidth={props.fullWidth}
@@ -17,4 +17,4 @@ const TextField = (props) => {
     )
 }
 
-export default TextField;
+export default TextInput;
